@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <span class="status-head-wrapper">
+            <h1 id="status-head">Choose</h1>
+        </span>
+
+        <div class="game-button-wrapper">
+            <button id="rock-button" onclick="startGame(0)" type="button">Rock</button>
+            <button id="paper-button" onclick="startGame(1)" type="button">Paper</button>
+            <button id="scissors-button" onclick="startGame(2)" type="button">Scissors</button>
+            <button id='retry' class='hide' onclick="reload()" type="button">Play Again</button>
+        </div>
+
+        <div class="move-display">
+            <h2 id="user"></h2>
+            <h2 id="comp"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
